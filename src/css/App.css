@@ -16,6 +16,7 @@ h3 {
 .App {
   text-align: center;
   font-family: "Gentium Book Basic", serif;
+  margin-bottom: 30px;
 }
 
 .App-headings {
