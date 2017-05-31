@@ -27,7 +27,7 @@ class App extends Component {
               <NavLink to={'/homework'}>Homework</NavLink>
             </li>
             <li>
-              <NavLink to={'/youtube'}>Homework</NavLink>
+              <NavLink to={'/youtube'}>YouTube</NavLink>
             </li>
           </ul>
         </div>
