@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { NavLink, Switch, Route } from 'react-router-dom';
+import { Switch, Route, NavLink } from 'react-router-dom'
 import Github from './Github';
-
+import Nasa from './Nasa';
+import Homework from './Homework';
+import Youtube from './Youtube';
 import '../css/App.css';
 import '../css/NavLinks.css';
 
@@ -16,21 +18,25 @@ class App extends Component {
           </div>
           <ul className="nav-links">
             <li>
-              <NavLink to='/github'>GitHub API</NavLink>
+              <NavLink to={'/github'}>Github API</NavLink>
             </li>
             <li>
-              <NavLink to='/nasa'>NASA API</NavLink>
+              <NavLink to={'/nasa'}>NASA API</NavLink>
             </li>
             <li>
-              <NavLink to='/homework'> Homework</NavLink>
+              <NavLink to={'/homework'}>Homework</NavLink>
+            </li>
+            <li>
+              <NavLink to={'/youtube'}>Homework</NavLink>
             </li>
           </ul>
         </div>
         <Switch>
           <Route path='/github' component={Github} />
-          <Route render={() => <p>
-          To get started, click one of the links above
-          </p>} />
+          <Route path='/nasa' component={Nasa} />
+          <Route path='/homework' component={Homework} />
+          <Route path='/youtube' component={Youtube} />
+          <Route render={() => <p>To get started, click one of the links above</p>} />
         </Switch>
       </div>
     );
